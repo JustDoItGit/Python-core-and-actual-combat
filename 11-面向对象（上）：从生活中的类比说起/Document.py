@@ -13,7 +13,7 @@ class Document():
 
 
 harry_potter_book = Document('Harry Potter', 'J. K Rowling',
-                              '... Forever Do not believe any thing is capable of thinking independently ...')
+                             '... Forever Do not believe any thing is capable of thinking independently ...')
 
 print(harry_potter_book.title)
 print(harry_potter_book.author)
