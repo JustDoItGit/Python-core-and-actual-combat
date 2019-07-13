@@ -3,9 +3,9 @@ from SearchEngineBase import main
 from SearchEngineBase import SearchEngineBase
 
 
-class BOWIinvertedIindexEngine(SearchEngineBase):
+class BOWInvertedIndexEngine(SearchEngineBase):
     def __init__(self):
-        super(BOWIinvertedIindexEngine, self).__init__()
+        super(BOWInvertedIndexEngine, self).__init__()
         self.inverted_index = {}
 
     def process_corpus(self, id, text):
@@ -66,5 +66,5 @@ class BOWIinvertedIindexEngine(SearchEngineBase):
 
 
 if __name__ == '__main__':
-    search_engine = BOWIinvertedIindexEngine()
+    search_engine = BOWInvertedIndexEngine()
     main(search_engine)
