@@ -42,5 +42,6 @@ class SimpleEngine(SearchEngineBase):
         return results
 
 
-search_engine = SimpleEngine()
-main(search_engine)
+if __name__ == '__main__':
+    search_engine = SimpleEngine()
+    main(search_engine)
