@@ -21,7 +21,10 @@ class BOWIinvertedIindexEngine(SearchEngineBase):
         for query_word in query_words:
             query_words_index.append(0)
 
-        # 这后面的倒排索引暂时不理解没关系，这里重点理解类的继承，和方法重写就行
+        """
+        首先我要强调一下，这次的算法并不需要你完全理解，这里的实现有一些超出了本章知识点。但希望你不要因此退缩，这个例子会告诉你，
+        面向对象编程是如何把算法复杂性隔离开来，而保留接口和其他的代码不变。
+        """
         # 如果某一个查询单词的倒序索引为空，我们就立刻返回
         for query_word in query_words:
             if query_word not in self.inverted_index:
