@@ -14,7 +14,7 @@ def my_decorator2(func):
     @functools.wraps(func)
     def wrapper(*args, **kwargs):
         print('wrapper of decorator2')
-        func(*args, **kwargs)
+        return func(*args, **kwargs)
 
     return wrapper
 

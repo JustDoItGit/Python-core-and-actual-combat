@@ -3,7 +3,8 @@ def repeat(num):
         def wrapper(*args, **kwargs):
             for i in range(num):
                 print('wrapper of decorator')
-                func(*args, **kwargs)
+                # func(*args, **kwargs)
+                return func(*args, **kwargs)
 
         return wrapper
 
