@@ -16,3 +16,5 @@ def greet(message):
 
 
 greet('hello world')
+print(greet.__name__)
+help(greet)
