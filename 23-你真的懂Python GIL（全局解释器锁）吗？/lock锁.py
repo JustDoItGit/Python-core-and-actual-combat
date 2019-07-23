@@ -1,12 +1,13 @@
-import threading
 import dis
+import threading
 
 n = 0
-
+lock = threading.Lock()
 
 def foo():
     global n
-    n += 1
+    with lock:
+        n += 1
 
 
 # 下面代码明显对n线程不安全
