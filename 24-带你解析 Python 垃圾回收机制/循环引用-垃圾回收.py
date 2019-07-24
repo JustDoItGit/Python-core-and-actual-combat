@@ -1,4 +1,5 @@
 import os
+import gc
 import psutil
 
 
@@ -22,4 +23,5 @@ def func():
 
 
 func()
+gc.collect()
 show_memory_info('finished')
