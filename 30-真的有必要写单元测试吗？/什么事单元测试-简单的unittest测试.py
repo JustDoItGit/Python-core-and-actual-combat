@@ -21,6 +21,7 @@ class TestSort(unittest.TestCase):
 
 
 if __name__ == '__main__':
+    # 如果是命令行下运行，则：
     unittest.main()
-
-    unittest.main(argv=['first-arg-is-ignored'], exit=False)
+    # 如果在 Jupyter 下，请用如下方式运行单元测试
+    # unittest.main(argv=['first-arg-is-ignored'], exit=False)
