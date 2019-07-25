@@ -3,7 +3,6 @@ from contextlib import contextmanager
 
 @contextmanager
 def file_manager(name, mode):
-    global f
     try:
         f = open(name, mode)
         yield f
